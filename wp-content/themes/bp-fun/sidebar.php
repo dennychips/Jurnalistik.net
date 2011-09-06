@@ -1,5 +1,5 @@
 <div id="sidebar-column" class="bpside">
-
+<?php locate_template( array( 'groups/group-menu.php' ), true ) ?>
 <?php
 include (TEMPLATEPATH . '/options.php');
 if($bp_existed == 'true') { ?>
