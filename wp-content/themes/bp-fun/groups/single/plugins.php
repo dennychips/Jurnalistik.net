@@ -6,11 +6,14 @@
 
 			<?php do_action( 'bp_before_group_plugin_template' ) ?>
 
-			<div id="item-header">
-				<?php locate_template( array( 'groups/single/group-header.php' ), true ) ?>
-			</div><!-- #item-header -->
+			<!--
+<div id="item-header">
+				<?php //locate_template( array( 'groups/single/group-header.php' ), true ) ?>
+			</div>
+-->
 
-			<div id="item-nav">
+			<!--
+<div id="item-nav">
 				<div class="item-list-tabs no-ajax" id="object-nav">
 					<ul>
 						<?php bp_get_options_nav() ?>
@@ -18,7 +21,8 @@
 						<?php do_action( 'bp_group_plugin_options_nav' ) ?>
 					</ul>
 				</div>
-			</div><!-- #item-nav -->
+			</div>
+-->
 
 			<div id="item-body">
 

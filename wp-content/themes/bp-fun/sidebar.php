@@ -1,4 +1,3 @@
-<?php if(bp_is_group_home()) { echo "test";}?>
 <div id="sidebar-column" class="bpside">
 <?php locate_template( array( 'groups/group-menu.php' ), true ) ?>
 <?php
