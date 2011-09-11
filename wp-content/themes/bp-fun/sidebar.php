@@ -1,6 +1,6 @@
 
 <div id="sidebar-column" class="bpside">
-<?php if(!bp_is_user_groups()) : ?>
+<?php if(!bp_is_user_groups() && bp_is_group()) : ?>
 <?php locate_template( array( 'groups/group-menu.php' ), true ) ?>
 <?php else : ?>
 	

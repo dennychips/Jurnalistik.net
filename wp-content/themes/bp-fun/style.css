@@ -128,5 +128,5 @@ v1.1
 /* Load the adminbar styles */
 @import url(_inc/css/adminbar.css);
 
-/*uncomment this if you are using custom.css in parent theme
-@import url(_inc/css/custom.css); */
+/*uncomment this if you are using custom.css in parent theme */
+@import url(_inc/css/custom.css); 

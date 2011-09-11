@@ -78,7 +78,7 @@ a img { border: none; }
 div#item-header {
 	overflow: hidden;
 }
-	div#item-header div#item-header-content { margin-left: 170px; }
+	div#item-header div#item-header-content { /* margin-left: 170px;  */}
 
 	div#item-header h2 {
 		font-size: 28px;

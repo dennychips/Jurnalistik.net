@@ -279,10 +279,6 @@ ol.pinglist li a:hover {color: #000000; text-decoration: underline!important; di
 
 #sidebar-column {background: #FFFFFF; width: 260px; float: right; padding: 15px;}
 
-.groups #sidebar-column {background: #FFFFFF; width: 260px; float: left; padding: 15px;}
-.groups #content {
-	float: right;
-}
 
 #post-entry #main-entry {margin: 0px; padding: 0px; float: left; width: 100%;}
 

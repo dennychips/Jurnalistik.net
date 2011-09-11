@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
-	<div id="content">
-		<div class="padder">
+	<div id="content" <?php if(bp_is_group()){?> class="group-content"<?php }?>>
+		<div class="padder <?php if(bp_is_group()){?>group-padder<?php }?>">
 			<?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
 
 			<?php do_action( 'bp_before_group_plugin_template' ) ?>

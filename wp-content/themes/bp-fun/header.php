@@ -143,30 +143,7 @@ if($tn_buddyfun_header_logo == '') { ?>
 
 
 <div class="navigation">
-<?php if( $bp_existed == 'true' ) { //check if bp existed ?>
-<?php if ( function_exists( 'wp_nav_menu' ) ) { // Added in 3.0 ?>
-<ul id="nav">
-<?php include( TEMPLATEPATH . '/navigation.php'); ?>
-<?php echo bp_wp_custom_nav_menu($get_custom_location='main-nav', $get_default_menu='revert_wp_menu_page'); ?>
-</ul>
-<?php } else { ?>
-<ul id="nav">
-<li<?php if(is_front_page()) { echo " id='home'"; } ?>><a href="<?php echo home_url(); ?>" title="<?php _e('Go back to home', TEMPLATE_DOMAIN); ?>"><?php _e('Home', TEMPLATE_DOMAIN); ?></a></li>
-<?php wp_list_pages('title_li=&depth=0'); ?>
-</ul>
-<?php } ?>
-<?php } else { ?>
-<?php if ( function_exists( 'wp_nav_menu' ) ) { // Added in 3.0 ?>
-<ul id="nav">
-<?php echo bp_wp_custom_nav_menu($get_custom_location='main-nav', $get_default_menu='revert_wp_menu_page'); ?>
-</ul>
-<?php } else { ?>
-<ul id="nav">
-<li<?php if(is_front_page()) { echo " id='home'"; } ?>><a href="<?php echo home_url(); ?>" title="<?php _e('Go back to home', TEMPLATE_DOMAIN); ?>"><?php _e('Home', TEMPLATE_DOMAIN); ?></a></li>
-<?php wp_list_pages('title_li=&depth=0'); ?>
-</ul>
-<?php } ?>
-<?php } ?>
+<?php wp_nav_menu();?>
 </div>
 
 </div>

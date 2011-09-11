@@ -15,3 +15,13 @@
 */
 
 
+.groups #sidebar-column {background: #FFFFFF; width: 260px; float: left; padding: 15px;}
+.groups #content {
+	float: right;
+}
+.group-sidebar{
+	width: 120px !important;
+}
+.group-content{
+	width: 800px !important;
+}
