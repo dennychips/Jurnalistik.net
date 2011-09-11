@@ -11,7 +11,8 @@
 				<?php locate_template( array( 'groups/single/group-header.php' ), true ) ?>
 			</div><!-- #item-header -->			
 		
-			 <div id="item-nav">
+			 <!--
+<div id="item-nav">
 				<div class="item-list-tabs no-ajax" id="object-nav">
 					<ul>
 						<?php bp_get_options_nav() ?>
@@ -19,7 +20,8 @@
 						<?php do_action( 'bp_group_options_nav' ) ?>
 					</ul>
 				</div>
-			</div><!-- #item-nav -->
+			</div>
+--><!-- #item-nav -->
 			<?php endif;?>
 
 			<div id="item-body">
@@ -70,6 +72,6 @@
 		</div><!-- .padder -->
 	</div><!-- #content -->
 
-	<?php locate_template( array( 'sidebar.php' ), true ) ?>
+	<?php locate_template( array( 'groups/sidebar-group.php' ), true ) ?>
 
 <?php get_footer() ?>

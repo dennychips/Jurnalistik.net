@@ -1,3 +1,4 @@
+
 <div id="sidebar-column" class="bpside">
 <?php locate_template( array( 'groups/group-menu.php' ), true ) ?>
 <?php
@@ -6,7 +7,7 @@ if($bp_existed == 'true') { ?>
 
 <?php do_action('bp_sidebar_dir'); ?>
 
-<?php if( bp_is_blog_page() || is_front_page() || !bp_current_component() || !bp_is_group_home() || bp_is_user_groups()){  ?>
+<?php if( bp_is_blog_page() || is_front_page() || !bp_current_component()) {  ?>
 
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar( __('blog-sidebar', TEMPLATE_DOMAIN) ) ) : ?>
 
