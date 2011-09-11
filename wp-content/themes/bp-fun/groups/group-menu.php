@@ -1,6 +1,5 @@
 <div class="user-image">
-
-                <a href="<?php bp_group_permalink() ?>" class='user-profile-wrap'><?php 
+	<a href="<?php bp_group_permalink() ?>" class='user-profile-wrap'><?php 
 global $bp;
  global $groups_template; echo  bp_core_fetch_avatar( array( 'item_id' => $groups_template->group->id, 'object' => 'group', 'height'=>100,'width'=>100,'type' => 'full', 'avatar_dir' => 'group-avatars', 'alt' => __( 'Group Avatar', 'buddypress' ) ) );
 

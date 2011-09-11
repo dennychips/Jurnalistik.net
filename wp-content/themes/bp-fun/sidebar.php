@@ -1,6 +1,10 @@
 
 <div id="sidebar-column" class="bpside">
+<?php if(!bp_is_user_groups()) : ?>
 <?php locate_template( array( 'groups/group-menu.php' ), true ) ?>
+<?php else : ?>
+	
+<?php endif;?>
 <?php
 include (TEMPLATEPATH . '/options.php');
 if($bp_existed == 'true') { ?>
