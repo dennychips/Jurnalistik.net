@@ -25,3 +25,8 @@
 .group-content{
 	width: 800px !important;
 }
+
+.group-padder {
+	width: 750px !important;
+	background: black;
+}
