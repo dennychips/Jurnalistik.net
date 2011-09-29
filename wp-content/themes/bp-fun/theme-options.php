@@ -242,7 +242,7 @@ ul.pagenav li a, ul.pagenav li.selected a {
 <?php } ?>
 
 #top-header .navigation {
-	background: <?php if($tn_buddyfun_nav_bg_color == ""){ ?><?php echo "#204C6E"; } else { ?><?php echo $tn_buddyfun_nav_bg_color; ?><?php } ?> <?php if($tn_buddyfun_header_gloss_on == 'enable') { ?>url(<?php echo get_template_directory_uri(); ?>/_inc/images/gloss.png) repeat-x left -4px<?php } else { ?><?php } ?>!important;
+	background: <?php if($tn_buddyfun_nav_bg_color == ""){ ?><?php echo "#204C6E"; } else { ?><?php echo $tn_buddyfun_nav_bg_color; ?><?php } ?> <?php if($tn_buddyfun_header_gloss_on == 'enable') { ?>url(<?php echo get_template_directory_uri(); ?>/_inc/images/gloss.png) repeat-x left -4px<?php } else { ?><?php } ?>;
 }
 
 

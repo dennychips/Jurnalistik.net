@@ -144,6 +144,7 @@ if($tn_buddyfun_header_logo == '') { ?>
 
 <div class="navigation">
 <?php wp_nav_menu();?>
+
 </div>
 
 </div>

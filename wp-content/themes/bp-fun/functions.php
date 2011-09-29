@@ -703,9 +703,9 @@ array(
 'id' => __('right-column', TEMPLATE_DOMAIN),
 'description' => __('Right Column Widget', TEMPLATE_DOMAIN),
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
-'after_widget' => '</div>',
+'after_widget' => '</div></div>',
 'before_title' => '<h2 class="widgettitle">',
-'after_title' => '</h2>'
+'after_title' => '</h2><div class="widget-content">'
 )
 );
 
@@ -926,6 +926,15 @@ if ($headtype == ""){ ?>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:light,regular,bold' rel='stylesheet' type='text/css'>
 <?php }
 
+}
+
+//add_filter('wp_nav_menu_items','add_social_login', 10, 2);
+function add_social_login($items, $args) {
+        
+        
+        $items .= '<li style="float:right">Test</li>';
+        
+        return $items;
 }
 
 ?>

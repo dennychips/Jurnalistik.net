@@ -30,7 +30,8 @@ class BP_Group_Documents_Newest_Widget extends WP_Widget {
 	/***
 	 * Main HTML Display
 	 */
-
+	 
+	 global $members_template;
 	$document_list = BP_Group_Documents::get_list_for_newest_widget( $instance['num_items'], $instance['group_filter'], $instance['featured'] ); 
 
 	if( $document_list && count($document_list) >=1 ) {
@@ -40,9 +41,9 @@ class BP_Group_Documents_Newest_Widget extends WP_Widget {
 			$group = new BP_Groups_Group( $document->group_id );
 			echo '<li>';
 			if( $instance['group_filter'] ) { 
-				echo '<a href="' . $document->get_url() . '">' . $document->icon() . ' ' . attribute_escape( $document->name ) . '</a>';
+				echo '<a class="doctitle" href="' . $document->get_url() . '">' . $document->icon() . ' ' . attribute_escape( $document->name ) . '</a>';
 			} else {
-				echo sprintf( __('%s posted in %s','bp-group-documents'),'<a href="' . $document->get_url() . '">' . attribute_escape( $document->name ) . '</a>','<a href="' . bp_get_group_permalink( $group ) . '">' . attribute_escape( $group->name ) . '</a>');
+				echo sprintf( __('%s posted by '.$members_template->member->fullname.' in %s','bp-group-documents'),'<a  class="doctitle" href="' . $document->get_url() . '">' . attribute_escape( $document->name ) . '</a>','<a href="' . bp_get_group_permalink( $group ) . '">' . attribute_escape( $group->name ) . '</a>') ;
 			}
 			echo '</li>';
 		}
